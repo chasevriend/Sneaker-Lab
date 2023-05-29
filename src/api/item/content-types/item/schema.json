@@ -4,7 +4,8 @@
   "info": {
     "singularName": "item",
     "pluralName": "items",
-    "displayName": "item"
+    "displayName": "item",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,24 +15,22 @@
     "name": {
       "type": "string"
     },
-    "shortDescription": {
-      "type": "richtext"
-    },
-    "longDescription": {
+    "description": {
       "type": "richtext"
     },
     "price": {
       "type": "decimal"
     },
     "img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "category": {
       "type": "enumeration",
